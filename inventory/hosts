@@ -1,0 +1,15 @@
+# This is an Ansible inventory file in INI format. You can define a list of
+# hosts and groups to be managed by this particular inventory.
+#
+# Connection information can be added to groups, more information is
+# documented at: 
+# https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
+#
+# A way to check that all of your expected hosts are accessable is:
+# ansible all -m ping --ask-become-pass
+#
+# Full perfSONAR hosts inventory grouped by installation bundle
+[all:vars]
+
+[pssid-gui]
+pssid-dev.miserver.it.umich.edu       ansible_python_interpreter=/usr/bin/python3
